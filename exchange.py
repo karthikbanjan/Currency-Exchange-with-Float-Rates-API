@@ -2,7 +2,7 @@ import requests as rq
 
 
 def get_exchange_rate(from_currency):
-    url = f'http://www.floatrates.com/daily/{from_currency.lower()}.json'
+    url = f"http://www.floatrates.com/daily/{from_currency.lower()}.json"
     request = rq.get(url).json()
     return request
 
