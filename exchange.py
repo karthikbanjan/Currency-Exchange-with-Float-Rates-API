@@ -22,11 +22,12 @@ while True:
         rate = float(rates[to_currency.lower()]["rate"])
         print("Exchange rate: ", money * rate)
 
-        if input("Do you want to convert to another  currency? (y/n) ") == "y":
+        if input("Do you want to convert to another currency with the same money? (y/n): ") == "y":
             continue
-        elif input("Do you wish to convert from another currency? (y/n) ") == "y":
+        elif input("Do you wish to convert from another currency? (y/n): ") == "y":
             break
         else:
+            print("Thank you for using this currency exchanger!")
             exit()
 
 
